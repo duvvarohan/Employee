@@ -42,7 +42,7 @@ public class EmployeeController  {
 		 
 	 }
 	 @DeleteMapping("/delete/{id}")
-	    public void deleteEmployeeDetails(@RequestBody @PathVariable("id") Integer id) {
+	    public void deleteEmployeeDetails( @PathVariable("id") Integer id) {
 		    employeeServiceImpl.deleteEmployeeDetails(id);
 	 }
 } 
